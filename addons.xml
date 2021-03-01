@@ -4,7 +4,7 @@
 
 <!-- 1- Repositories -->
 
-<!-- 1.1- Fishenzon repo -->  
+<!-- 1.1- Fishenzon repo -->
   <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.1" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
@@ -20,5 +20,30 @@
 		<platform>all</platform>
 	</extension>
 </addon>
-  
+
+<!-- 1.2- Poodle 19 Add-ons Repository -->
+<addon id="repository.Kpoodle" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Poodle 19 Add-ons Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Kpoodle/Repo19/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Kpoodle/Repo19/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Kpoodle/Repo19/master/zips</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <disclaimer lang="en"></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
+
 </addons>
