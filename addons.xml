@@ -22,7 +22,7 @@
 </addon>
 
 <!-- 1.2- Poodle 19 Add-ons Repository -->
-<addon id="repository.Kpoodle" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
+<addon id="repository.Kpoodle19" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
