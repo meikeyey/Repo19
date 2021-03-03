@@ -25,9 +25,9 @@
 	</extension>
 </addon>
 
-<!-- 1- Repositories -->
+<!-- 2- Repositories B -->
 
-<!-- 1.1- Fishenzon repo -->
+<!-- 2.1- Fishenzon repo -->
   <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.1" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
@@ -44,7 +44,7 @@
 	</extension>
 </addon>
 
-<!-- 1.2- Host505 Repository -->
+<!-- 2.2- Host505 Repository -->
 <addon id="repository.host505" name="host505 repo" version="2.4" provider-name="host505">
     <extension point="xbmc.addon.repository" name="host505 repo">
     <dir>
@@ -70,7 +70,7 @@
     </extension>
 </addon>
 
-<!-- 1.3- Poodle 19 Add-ons Repository -->
+<!-- 2.3- Poodle 19 Add-ons Repository -->
 <addon id="repository.Kpoodle19" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -93,6 +93,22 @@
         </assets>
         <news></news>
     </extension>
+</addon>
+
+<!-- 3- Services -->
+
+<!-- 3.1- Fishenzon repo -->
+<addon id="service.subtitles.wizdom" name="Wizdom Subs" version="3.0.1" provider-name="Wizdom">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Wizdom Subs</summary>
+    <description lang="en">Wizdom Subs. Be smart use subs!  &#xA;Visit us at http://wizdom.xyz</description>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 
 </addons>
