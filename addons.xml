@@ -5,6 +5,24 @@
 <!-- 1- Repositories A -->
 
 <!-- 1.1- Nixgates Repo -->
+<addon id="lanik_p3.repo" name="Lanik (Python 3) Repository" provider-name="Dalibor Lanik" version="1.0.0">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0" />
+        </requires>
+        <extension name="Lanik (Python 3) Repository" point="xbmc.addon.repository">
+            <info compressed="false">http://kodi.lanik.org/_p3repo/addons.xml</info>
+            <checksum>http://kodi.lanik.org/_p3repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://kodi.lanik.org/_p3repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Repository for my KODI plugins</summary>
+            <description>KODI Repository for stuff made by D. Lanik</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<!-- 1.2- Nixgates Repo -->
 <addon id="repository.nixgates" name="Nixgates Repo" version="2.0.0" provider-name="Nixgates">
 	<extension point="xbmc.addon.repository" name="Nixgates Repo">
 		<dir minversion="18.0" maxversion="18.9.0">
@@ -27,7 +45,34 @@
 
 <!-- 2- plugin.video -->
 
-<!-- 2.1- WatchNixtoons2 -->
+<!-- 2.1- Cumination -->
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.7">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
+        <import addon="script.common.plugin.cache" />
+        <import addon="script.module.websocket" version="0.50.0" />
+        <import addon="script.module.requests" optional="true" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en_GB">Cumination, the culmination of adult sites on Kodi</summary>
+        <description lang="en_GB">Cumination, the culmination of adult sites on Kodi</description>
+        <disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered. Click on About from the contextmenu on each site to check for contact details.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<!-- 2.2- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -303,7 +348,48 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 4.2- Host505 Repository -->
+<!-- 4.2- Dobbelina Repository -->
+<addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.3" provider-name="dobbelina">
+    <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+</dir>
+        <info compressed="false">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/dobbelina/repository.dobbelina/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Unofficial Addons for Kodi</summary>
+		<description>For Cumination Updates
+Please visit
+https://github.com/dobbelina/repository.dobbelina/issues
+for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<forum>https://github.com/dobbelina/repository.dobbelina/issues</forum>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<!-- 4.3- frenchdj Repository -->
+<addon id="repository.frenchdj" name="frenchdj repository" version="0.0.2" provider-name="frenchdj">
+	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
+		<info compressed="false">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>frenchdj repository</summary>
+		<description>frenchdj addons repository</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 4.4- Host505 Repository -->
 <addon id="repository.host505" name="host505 repo" version="2.4" provider-name="host505">
     <extension point="xbmc.addon.repository" name="host505 repo">
     <dir>
@@ -329,7 +415,94 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 4.3- SlyGuy Repository -->
+<!-- 4.5- Octopus Repository -->
+<addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.71" provider-name="Twiglet">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR aqua]Octopus Repository[/COLOR]">
+            <info compressed="false">http://octopus246.esy.es/_octopus/addons.xml</info>
+            <checksum>http://octopus246.esy.es/_octopus/addons.xml.md5</checksum>
+            <datadir zip="true">http://octopus246.esy.es/_octopus/</datadir>
+            <hashes>false</hashes>
+			<dir>
+                <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+                <hashes>false</hashes>
+           </dir>
+		   
+           <dir>
+               <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+               <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+               <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+			   <hashes>false</hashes>
+          </dir>
+		  
+          <dir>
+              <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+              <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+              <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+			  <hashes>false</hashes>
+         </dir>
+		 
+		 <dir>
+             <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml</info>
+             <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml.md5</checksum>
+             <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/</datadir>
+        </dir>
+		
+		 <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
+		
+         <dir>
+             <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+             <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+             <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+			 <hashes>false</hashes>
+         </dir>
+		<dir>
+           <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+           <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+           <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		   <hashes>false</hashes>
+        </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
+            <description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
+            <platform>all</platform>
+            <genre>movies,usa</genre>
+        </extension>
+    </addon>
+
+<!-- 4.6- ResolveURL Repository -->
+<addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
+  <extension point="xbmc.addon.repository" name="ResolveURL Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en_GB">ResolveURL and Link Tester</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets> 
+  </extension>
+</addon>
+
+<!-- 4.7- SlyGuy Repository -->
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.2">
   <extension point="xbmc.addon.repository" name="SlyGuy Repository">
     <dir>
@@ -352,9 +525,87 @@ Add-on originally by doko.
   </extension>
 </addon>
 
-<!-- 5- Services Subtitles -->
+<!-- 4.8- Universal Scrapers Repository -->
+<addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="universalscrapers">
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description>carrying on the dream</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
 
-<!-- 5.1- Wizdom Subs -->
+<!-- 5- Script -->
+
+<!-- 5.1- EZ Maintenance+ -->
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2020.12.19.1" provider-name="aenema, peno">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Streamlined Utility Tool for Kodi</summary>
+	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
+    <language></language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+    <assets>
+	    <icon>icon.png</icon>
+	    <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 5.2- KCleaner -->
+<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02"> 
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" /> 
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="startup"> 
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata"> 
+    <platform>all</platform>
+    <website>http://projects.lanik.org/KodiProject_KCleaner.htm</website>
+    <summary lang="en_GB">Clean up temporary files in Kodi.</summary>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
+    <email>dalibor@lanik.org</email>
+    <description lang="en_GB">Clean up temporary files in Kodi.</description>
+    <news>v4.0 [CR]
+- Python 3 version [CR]
+</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <banner>resources/banner.jpg</banner>
+        <logo>resources/logo.png</logo>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 6- Services Subtitles -->
+
+<!-- 6.1- Wizdom Subs -->
 <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="3.0.1" provider-name="Wizdom">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
