@@ -4,7 +4,32 @@
 
 <!-- 1- Repositories A -->
 
-<!-- 1.1- Nixgates Repo -->
+<!-- 1.1- Elementum Unofficial Repository -->
+<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.2" provider-name="Elementum Unofficial">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Elementum Unofficial Repository">
+        <dir>
+            <info compressed="false">https://rock.seedhost.eu/kcat123/Repo/zips3/addons.xml</info>
+            <checksum>https://rock.seedhost.eu/kcat123/Repo/zips3/addons.xml.md5</checksum>
+            <datadir zip="true">https://rock.seedhost.eu/kcat123/Repo/zips3/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <disclaimer lang="en"></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
+
+<!-- 1.2- Nixgates Repo -->
 <addon id="lanik_p3.repo" name="Lanik (Python 3) Repository" provider-name="Dalibor Lanik" version="1.0.0">
         <requires>
             <import addon="xbmc.addon" version="12.0.0" />
@@ -22,7 +47,7 @@
     </extension>
 </addon>
 
-<!-- 1.2- Nixgates Repo -->
+<!-- 1.3- Nixgates Repo -->
 <addon id="repository.nixgates" name="Nixgates Repo" version="2.0.0" provider-name="Nixgates">
 	<extension point="xbmc.addon.repository" name="Nixgates Repo">
 		<dir minversion="18.0" maxversion="18.9.0">
