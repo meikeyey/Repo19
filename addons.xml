@@ -28,8 +28,22 @@
         <news></news>
     </extension>
 </addon>
+	
+<!-- 1.2- jmooremcc Addons Repo -->
+<addon id="repository.jmooremcc" name="jmooremcc Addons" version="1.0.0" provider-name="jmooremcc">
+	<extension point="xbmc.addon.repository" name="jmooremcc Addons">
+		<info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info>
+		<checksum>https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/jmooremcc/Repository.jmooremcc/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>jmooremcc XBMC Addons</summary>
+		<description>This repository contains kodi addons created by jmooremcc.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 
-<!-- 1.2- Nixgates Repo -->
+<!-- 1.3- Nixgates Repo -->
 <addon id="lanik_p3.repo" name="Lanik (Python 3) Repository" provider-name="Dalibor Lanik" version="1.0.0">
         <requires>
             <import addon="xbmc.addon" version="12.0.0" />
@@ -47,7 +61,7 @@
     </extension>
 </addon>
 
-<!-- 1.3- Nixgates Repo -->
+<!-- 1.4- Nixgates Repo -->
 <addon id="repository.nixgates" name="Nixgates Repo" version="2.0.0" provider-name="Nixgates">
 	<extension point="xbmc.addon.repository" name="Nixgates Repo">
 		<dir minversion="18.0" maxversion="18.9.0">
@@ -68,9 +82,86 @@
 	</extension>
 </addon>
 
-<!-- 2- plugin.video -->
+<!-- 2- plugin.program -->
 
-<!-- 2.1- Cumination -->
+<!-- 2.1- Super Favourites -->
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.7" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
+
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
+<!-- 3- plugin.video -->
+
+<!-- 3.1- Cumination -->
 <addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.7">
     <requires>
         <import addon="script.module.six" />
@@ -97,7 +188,7 @@
     </extension>
 </addon>
 
-<!-- 2.2- WatchNixtoons2 -->
+<!-- 3.2- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -170,9 +261,9 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 3- Repositories B -->
+<!-- 4- Repositories B -->
 
-<!-- 3.1- <!-- 3.1- DejaVu Repo -->
+<!-- 4.1- <!-- 3.1- DejaVu Repo -->
 <addon id="repository.DejaVu" name="[COLOR gold]DejaVu Repo[/COLOR]" version="1.0.5" provider-name="The Wombles">
 <extension point="xbmc.addon.repository" name="[COLOR gold]DejaVu Repo[/COLOR]">
 	<dir>
@@ -217,7 +308,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 3.2- Fishenzon repo -->
+<!-- 4.2- Fishenzon repo -->
   <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.1" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
@@ -234,7 +325,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 3.3- Poodle 19 Add-ons Repository -->
+<!-- 4.3- Poodle 19 Add-ons Repository -->
 <addon id="repository.Kpoodle19" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -259,7 +350,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 3.4- Narcacist's Wizard Repository -->
+<!-- 4.4- Narcacist's Wizard Repository -->
 <addon id="repository.NarcacistWizard" name="Narcacist's Wizard Repository" version="1.1.2" provider-name="Narcacist">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -330,9 +421,9 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 4- Repositories C -->
+<!-- 5- Repositories C -->
 
-<!-- 4.1- Bugatsinho repository -->
+<!-- 5.1- Bugatsinho repository -->
 <addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
     <extension point="xbmc.addon.repository" name="Bugatsinho repository">
         <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
@@ -373,7 +464,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 4.2- Dobbelina Repository -->
+<!-- 5.2- Dobbelina Repository -->
 <addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.3" provider-name="dobbelina">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
     <dir>
@@ -399,7 +490,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 4.3- frenchdj Repository -->
+<!-- 5.3- frenchdj Repository -->
 <addon id="repository.frenchdj" name="frenchdj repository" version="0.0.2" provider-name="frenchdj">
 	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
 		<info compressed="false">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml</info>
@@ -414,7 +505,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 4.4- Host505 Repository -->
+<!-- 5.4- Host505 Repository -->
 <addon id="repository.host505" name="host505 repo" version="2.4" provider-name="host505">
     <extension point="xbmc.addon.repository" name="host505 repo">
     <dir>
@@ -440,7 +531,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 4.5- Octopus Repository -->
+<!-- 5.5- Octopus Repository -->
 <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.71" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -504,7 +595,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 4.6- ResolveURL Repository -->
+<!-- 5.6- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -527,7 +618,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 4.7- SlyGuy Repository -->
+<!-- 5.7- SlyGuy Repository -->
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.2">
   <extension point="xbmc.addon.repository" name="SlyGuy Repository">
     <dir>
@@ -550,7 +641,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 4.8- Universal Scrapers Repository -->
+<!-- 5.8- Universal Scrapers Repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -568,9 +659,9 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 5- Script -->
+<!-- 6- Script -->
 
-<!-- 5.1- EZ Maintenance+ -->
+<!-- 6.1- EZ Maintenance+ -->
 <addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2020.12.19.1" provider-name="aenema, peno">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
@@ -594,7 +685,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 5.2- KCleaner -->
+<!-- 6.2- KCleaner -->
 <addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02"> 
   <requires>
     <import addon="xbmc.python" version="3.0.0" /> 
@@ -628,7 +719,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 5.3- SubsKeys -->
+<!-- 6.3- SubsKeys -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
@@ -649,9 +740,9 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 6- Services Subtitles -->
+<!-- 7- Services Subtitles -->
 
-<!-- 6.1- Wizdom Subs -->
+<!-- 7.1- Wizdom Subs -->
 <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="3.0.1" provider-name="Wizdom">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -665,7 +756,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 6.2- All Subs Flash -->
+<!-- 7.2- All Subs Flash -->
 <addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.7" provider-name="Sbs">
   <requires>
     
