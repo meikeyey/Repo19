@@ -161,7 +161,47 @@
 
 <!-- 3- plugin.video -->
 
-<!-- 3.1- Cumination -->
+<!-- 3.1- Alvin -->
+<addon id="plugin.video.alvin" name="[COLOR aqua]Alvin[/COLOR]" provider-name="Twiglet" version="0.1.8">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.20.0" />-->
+        <import addon="script.alvin.artwork" />
+        <import addon="script.alvin.metadata" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.alvinscrapers" />
+        <import addon="script.module.six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.metahandler" optional="true" />
+        <import addon="script.module.openscrapers" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension library="alvin.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">Movies and TV Shows</summary>
+        <description lang="en_GB">Working On Kodi 19[CR]Credits to all devs past and present.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>
+
+<!-- 3.2- Cumination -->
 <addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.7">
     <requires>
         <import addon="script.module.six" />
@@ -188,7 +228,243 @@
     </extension>
 </addon>
 
-<!-- 3.2- WatchNixtoons2 -->
+<!-- 3.3- FDJ.HD -->
+<addon id="plugin.video.fdj.hd.matrix" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="1.0a-matrix" provider-name="frenchdj"> 
+<requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.simplejson"/>
+	<import addon="script.module.kodi-six" />
+</requires>  
+<extension point="xbmc.python.pluginsource" library="default.py">
+	<provides>video</provides>
+</extension>  
+<extension point="xbmc.addon.metadata">
+    <summary lang="en">[ Matrix Lite Edition ]</summary>
+    <description>FDJ.HD is a AIO (All In One) with Concerts, Dj Sets, Docs and more ... 
+Home of Alive.HD, Beats.HD and Documented.HD.
+Channels and Playlists organized by categories. Source: Youtube Website. 
+[B][COLOR lime]Advised the latest version of youtube 6.*.*+matrix[/B][/COLOR]</description>
+    <platform>all</platform>
+	<assets>
+       <icon>icon.png</icon>
+       <fanart>fanart.jpg</fanart>
+       <screenshot>resources/screenshots/01.jpg</screenshot>
+       <screenshot>resources/screenshots/02.jpg</screenshot>
+       <screenshot>resources/screenshots/03.jpg</screenshot>
+    </assets>
+	<news>
+	</news>
+</extension>
+</addon>
+
+<!-- 3.4- Mando S -->
+<addon id="plugin.video.mando"                                                                                                                                    
+	   name="Mando S"                                                 
+	   version="4.3.6"                                                                                                                                        
+	   provider-name="Darkness">
+  <requires>
+	
+
+    
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+	
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 3.5- Optimus -->
+<addon id="plugin.video.optimus"
+	   name="Optimus"
+	   version="1.0.3"
+	   provider-name="Darkness">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 3.6- Revolution -->
+<addon id="plugin.video.revolution" name="[COLORred]Revolution[/COLOR]" provider-name="Captain Jerk" version="2.0.9">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.20.0" />-->
+        <import addon="script.revolution.artwork" />
+        <import addon="script.revolution.metadata" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.revolutionscrapers" />
+        <import addon="script.module.six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.openscrapers" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension library="revolution.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">Revolution</summary>
+        <description lang="en_GB">Working On Matrix</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>
+
+<!-- 3.7- Shadow -->
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.5.3"                                                                                                                                        
+	   provider-name="Darkness">
+  <requires>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+	
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+  
+</addon>
+
+<!-- 3.8- SportHD -->
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.7" provider-name="Bugatsinho">
+  <requires>
+    <!--import addon="xbmc.python" version="2.1.0"/-->
+    <import addon="script.module.dateutil" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportHD by Bugatsinho</summary>
+    <description lang="en">Sport Streams from SportHD.me</description>
+    <disclaimer lang="en">All the streams on this add-on are hosted on the third party site and uploaded by other people. We are not responsible for any content that hosted on on the third-party sites. If you have any legal issues please contact appropriate video owners hosters.</disclaimer>
+	  <language>EN</language>
+    <license>GNU GPL, version 2</license>
+    <twitter>https://twitter.com/Bugatsinho</twitter>
+    <news>-compatible with Kodi18.x - 19.x version</news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 3.9- Telemedia 2.0 -->
+<addon id="plugin.video.telemedia"                                                                                                                                    
+	   name="Telemedia 2.0"                                                 
+	   version="2.0.0"                                                                                                                                        
+	   provider-name="Pavel Durov">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+	<import addon="script.module.requests"/>
+
+	<import addon="script.module.pyxbmct" version="1.1.4" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
+    <description lang="he">Telegram media for kodi</description>
+    <platform>all</platform>
+	<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			
+		</assets>
+		
+  </extension>
+</addon>
+
+<!-- 3.10- TheOath -->
+<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="3.6.001">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.20.0" />-->
+        <import addon="script.theoath.artwork" />
+        <import addon="script.theoath.metadata" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.oathscrapers" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.orion" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension library="theoath.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">TheOath</summary>
+        <description lang="en_GB">Multi-source add-on with native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>
+	
+<!-- 3.11- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -464,7 +740,29 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 5.2- Dobbelina Repository -->
+<!-- 5.2- Diamond Build Repo (Server 1 USA) For Kodi 19 -->
+<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build Repo (Server 1 USA) For Kodi 19[/COLOR][COLORwhite]*[/COLOR]" version="10.31" provider-name="Diamond Build">
+	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
+	<dir>
+		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
+		<checksum>https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+<summary lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</summary>
+<description lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 5.3- Dobbelina Repository -->
 <addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.3" provider-name="dobbelina">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
     <dir>
@@ -490,7 +788,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 5.3- frenchdj Repository -->
+<!-- 5.4- frenchdj Repository -->
 <addon id="repository.frenchdj" name="frenchdj repository" version="0.0.2" provider-name="frenchdj">
 	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
 		<info compressed="false">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml</info>
@@ -505,7 +803,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 5.4- Host505 Repository -->
+<!-- 5.5- Host505 Repository -->
 <addon id="repository.host505" name="host505 repo" version="2.4" provider-name="host505">
     <extension point="xbmc.addon.repository" name="host505 repo">
     <dir>
@@ -531,7 +829,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 5.5- Octopus Repository -->
+<!-- 5.6- Octopus Repository -->
 <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.71" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -595,7 +893,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 5.6- ResolveURL Repository -->
+<!-- 5.7- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -618,7 +916,26 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 5.7- SlyGuy Repository -->
+<!-- 5.8- SlyGuy Repository --<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build Repo (Server 1 USA) For Kodi 19[/COLOR][COLORwhite]*[/COLOR]" version="10.31" provider-name="Diamond Build">
+	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
+	<dir>
+		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
+		<checksum>https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+<summary lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</summary>
+<description lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<platform>all</platform>
+	</extension>
+</addon>>
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.2">
   <extension point="xbmc.addon.repository" name="SlyGuy Repository">
     <dir>
@@ -641,7 +958,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 5.8- Universal Scrapers Repository -->
+<!-- 5.9- Universal Scrapers Repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
