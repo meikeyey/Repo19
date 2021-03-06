@@ -43,48 +43,6 @@
 	</extension>
 </addon>
 
-<!-- 1.3- Nixgates Repo -->
-<addon id="repository.nixgates" name="Nixgates Repo" version="2.0.0" provider-name="Nixgates">
-	<extension point="xbmc.addon.repository" name="Nixgates Repo">
-		<dir minversion="18.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/</datadir>
-		</dir>
-		<dir minversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Nixgates</summary>
-		<description>Nixgates Repository</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<!-- 1.4- Nixgates Repo -->
-<addon id="repository.nixgates" name="Nixgates Repo" version="2.0.0" provider-name="Nixgates">
-	<extension point="xbmc.addon.repository" name="Nixgates Repo">
-		<dir minversion="18.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/</datadir>
-		</dir>
-		<dir minversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/</datadir>
-		</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Nixgates</summary>
-		<description>Nixgates Repository</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
 <!-- 2- plugin.program -->
 
 <!-- 2.1- Super Favourites -->
@@ -657,7 +615,28 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 5.6- Octopus Repository -->
+<!-- 5.6- Nixgates Repo -->
+<addon id="repository.nixgates" name="Nixgates Repo" version="2.0.0" provider-name="Nixgates">
+	<extension point="xbmc.addon.repository" name="Nixgates Repo">
+		<dir minversion="18.0" maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/leia/</datadir>
+		</dir>
+		<dir minversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/nixgates/nixgates/master/packages/matrix/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Nixgates</summary>
+		<description>Nixgates Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<!-- 5.7- Octopus Repository -->
 <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.71" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -721,7 +700,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 5.7- ResolveURL Repository -->
+<!-- 5.8- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -744,7 +723,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 5.8- SlyGuy Repository --<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build Repo (Server 1 USA) For Kodi 19[/COLOR][COLORwhite]*[/COLOR]" version="10.31" provider-name="Diamond Build">
+<!-- 5.9- SlyGuy Repository --<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build Repo (Server 1 USA) For Kodi 19[/COLOR][COLORwhite]*[/COLOR]" version="10.31" provider-name="Diamond Build">
 	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
 	<dir>
 		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
@@ -786,7 +765,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 5.9- Universal Scrapers Repository -->
+<!-- 5.10- Universal Scrapers Repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
