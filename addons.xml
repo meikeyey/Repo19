@@ -161,74 +161,7 @@
 
 <!-- 3- plugin.video -->
 
-<!-- 3.1- Alvin -->
-<addon id="plugin.video.alvin" name="[COLOR aqua]Alvin[/COLOR]" provider-name="Twiglet" version="0.1.8">
-    <requires>
-        <!--<import addon="xbmc.python" version="2.20.0" />-->
-        <import addon="script.alvin.artwork" />
-        <import addon="script.alvin.metadata" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.alvinscrapers" />
-        <import addon="script.module.six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.metahandler" optional="true" />
-        <import addon="script.module.openscrapers" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension library="alvin.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en_GB">Movies and TV Shows</summary>
-        <description lang="en_GB">Working On Kodi 19[CR]Credits to all devs past and present.</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <website />
-        <source />
-        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
-- See Changelog on Tools menu
-        </news>
-    </extension>
-</addon>
-
-<!-- 3.2- Cumination -->
-<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.7">
-    <requires>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.resolveurl" version="5.0.00" />
-        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
-        <import addon="script.common.plugin.cache" />
-        <import addon="script.module.websocket" version="0.50.0" />
-        <import addon="script.module.requests" optional="true" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en_GB">Cumination, the culmination of adult sites on Kodi</summary>
-        <description lang="en_GB">Cumination, the culmination of adult sites on Kodi</description>
-        <disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered. Click on About from the contextmenu on each site to check for contact details.</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<!-- 3.3- FDJ.HD -->
+<!-- 3.1- FDJ.HD -->
 <addon id="plugin.video.fdj.hd.matrix" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="1.0a-matrix" provider-name="frenchdj"> 
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -258,7 +191,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 </extension>
 </addon>
 
-<!-- 3.4- Mando S -->
+<!-- 3.2- Mando S -->
 <addon id="plugin.video.mando"                                                                                                                                    
 	   name="Mando S"                                                 
 	   version="4.3.6"                                                                                                                                        
@@ -284,7 +217,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 3.5- Optimus -->
+<!-- 3.3- Optimus -->
 <addon id="plugin.video.optimus"
 	   name="Optimus"
 	   version="1.0.3"
@@ -306,46 +239,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 3.6- Revolution -->
-<addon id="plugin.video.revolution" name="[COLORred]Revolution[/COLOR]" provider-name="Captain Jerk" version="2.0.9">
-    <requires>
-        <!--<import addon="xbmc.python" version="2.20.0" />-->
-        <import addon="script.revolution.artwork" />
-        <import addon="script.revolution.metadata" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.revolutionscrapers" />
-        <import addon="script.module.six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.openscrapers" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension library="revolution.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en_GB">Revolution</summary>
-        <description lang="en_GB">Working On Matrix</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <website />
-        <source />
-        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
-- See Changelog on Tools menu
-        </news>
-    </extension>
-</addon>
-
-<!-- 3.7- Shadow -->
+<!-- 3.4- Shadow -->
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
 	   version="2.5.3"                                                                                                                                        
@@ -370,7 +264,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   
 </addon>
 
-<!-- 3.8- SportHD -->
+<!-- 3.5- SportHD -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.1.7" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
@@ -394,77 +288,8 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     </assets>
   </extension>
 </addon>
-
-<!-- 3.9- Telemedia 2.0 -->
-<addon id="plugin.video.telemedia"                                                                                                                                    
-	   name="Telemedia 2.0"                                                 
-	   version="2.0.0"                                                                                                                                        
-	   provider-name="Pavel Durov">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-	<import addon="script.module.requests"/>
-
-	<import addon="script.module.pyxbmct" version="1.1.4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Telegram media for kodi,\n Thanks to "Aliaksei Levin" without him none of this would have been possiable</summary>
-    <description lang="he">Telegram media for kodi</description>
-    <platform>all</platform>
-	<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			
-		</assets>
-		
-  </extension>
-</addon>
-
-<!-- 3.10- TheOath -->
-<addon id="plugin.video.theoath" name="TheOath" provider-name="host505" version="3.6.001">
-    <requires>
-        <!--<import addon="xbmc.python" version="2.20.0" />-->
-        <import addon="script.theoath.artwork" />
-        <import addon="script.theoath.metadata" />
-        <import addon="script.module.resolveurl" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.oathscrapers" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.orion" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
-    </requires>
-    <extension library="theoath.py" point="xbmc.python.pluginsource">
-        <provides>video</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en_GB">TheOath</summary>
-        <description lang="en_GB">Multi-source add-on with native Orion integration.[CR][CR]The author does not host any of the content in this add-on and takes no responsibility for content found.</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <website />
-        <source />
-        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
-- See Changelog on Tools menu
-        </news>
-    </extension>
-</addon>
 	
-<!-- 3.11- WatchNixtoons2 -->
+<!-- 3.6- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
