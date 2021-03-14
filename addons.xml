@@ -505,14 +505,11 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 </addon>
 
 <!-- 4.2- Mando S -->
-<addon id="plugin.video.mando"                                                                                                                                    
-	   name="Mando S"                                                 
-	   version="4.3.6"                                                                                                                                        
+<addon id="plugin.video.mando"
+	   name="Mando S"
+	   version="4.4.0"
 	   provider-name="Darkness">
   <requires>
-	
-
-    
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -521,7 +518,6 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   <extension point="xbmc.addon.metadata">
     <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possible</description>
-	
     <platform>all</platform>
 	<assets>
             <icon>icon.png</icon>
@@ -533,7 +529,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 <!-- 4.3- Optimus -->
 <addon id="plugin.video.optimus"
 	   name="Optimus"
-	   version="1.0.3"
+	   version="1.0.4"
 	   provider-name="Darkness">
   <requires>
   </requires>
@@ -603,7 +599,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 <!-- 4.6- Shadow -->
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="2.5.6"
+	   version="2.5.8"
 	   provider-name="Darkness">
   <requires>
   </requires>
