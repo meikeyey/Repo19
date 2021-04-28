@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.wod" name="Wrestling Repository" version="1.8" provider-name="WOD">
+	<extension point="xbmc.addon.repository" name="Wrestling Repository">
+		<dir>
+			<info compressed="false">http://thundercat.cf/repos/wodrepo/addons.xml</info>
+			<checksum>http://thundercat.cf/repos/wodrepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://thundercat.cf/repos/wodrepo/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<genre>mix</genre>
+	</extension>
+</addon>
