@@ -280,7 +280,31 @@
 
 <!-- 4- plugin.video -->
 
-<!-- 4.1- FDJ.HD -->
+<!-- 4.1- Blink -->
+<addon id="plugin.video.blink"
+	   name="Blink"
+	   version="1.1.2"
+	   provider-name="Kodis">
+  <requires>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Freedom To Watch
+Everything You Want.</summary>
+    <description lang="en"> Watch everything you want in blink of an eye.</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 4.2- FDJ.HD -->
 <addon id="plugin.video.fdj.hd.matrix" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="1.0a-matrix" provider-name="frenchdj"> 
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -310,7 +334,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 </extension>
 </addon>
 
-<!-- 4.2- Kids New הכל לילדים -->
+<!-- 4.3- Kids New הכל לילדים -->
 <addon id="plugin.video.kids_new"
 	   name="הכל לילדים"
 	   version="1.5.4"
@@ -335,7 +359,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.3- Mando S -->
+<!-- 4.4- Mando S -->
 <addon id="plugin.video.mando"
 	   name="Mando S"
 	   version="4.4.0"
@@ -357,7 +381,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.4- Optimus -->
+<!-- 4.5- Optimus -->
 <addon id="plugin.video.optimus"
 	   name="Optimus"
 	   version="1.0.5"
@@ -379,7 +403,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.5- Playlist Loader -->
+<!-- 4.6- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.0.3+matrix" provider-name="Forked by Publish3r">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -401,7 +425,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.6- Sdarot.Tv V2 -->
+<!-- 4.7- Sdarot.Tv V2 -->
 <addon id="plugin.video.sdarot.tv" name="Sdarot.Tv V2" version="7.0.2" provider-name="KodiMaster">
     <requires>
         <import addon="script.module.requests" version="2.9.1"/>
@@ -427,12 +451,13 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     </extension>
 </addon>
 
-<!-- 4.7- Shadow -->
-<addon id="plugin.video.shadow"
-	   name="Shadow"
-	   version="2.6.6"
+<!-- 4.8- Shadow -->
+<addon id="plugin.video.shadow"                                                                                                                                    
+	   name="Shadow"                                                 
+	   version="2.6.8"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -441,21 +466,24 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   <extension point="xbmc.addon.metadata">
     <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possible</description>
+	
     <platform>all</platform>
 	<assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+  
 </addon>
 
-<!-- 4.8- SMR Link Tester -->
-<addon id="plugin.video.smr_link_tester" version="1.1.3" name="SMR Link Tester" provider-name="gujal">
+<!-- 4.9- SMR Link Tester -->
+<addon id="plugin.video.smr_link_tester" version="1.1.4" name="SMR Link Tester" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0"/> -->
         <import addon="script.module.resolveurl"/>
         <import addon="script.module.resolveurl.xxx"/>
         <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.kodi-six" version="0.0.1"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -470,8 +498,8 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<!-- 4.9- SportHD -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.7" provider-name="Bugatsinho">
+<!-- 4.10- SportHD -->
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.8" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -495,7 +523,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 	
-<!-- 4.10- WatchNixtoons2 -->
+<!-- 4.11- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -1240,7 +1268,29 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.9- SubsKeys -->
+<!-- 7.9- Skin Switcher -->
+<addon id="script.skinswitcher19"
+	     name="Skin Switcher"
+	     version="1.0.0"
+	     provider-name="Surfacingx, OpenELEQ, Fire TV Guru">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">-</summary>
+    <description lang="en">Choose a skin.</description>
+    <disclaimer lang="en">.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<!-- 7.10- SubsKeys -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.1"
