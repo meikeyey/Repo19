@@ -1026,7 +1026,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- 6.12- Octopus Repository -->
-<addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.84" provider-name="Twiglet">
+<!-- <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.84" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -1084,7 +1084,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
             <fanart>fanart.jpg</fanart>    
             </assets>
         </extension>
-    </addon>
+    </addon> -->
 
 <!-- 6.13- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
