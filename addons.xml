@@ -95,7 +95,7 @@
 </addon>
 
 <!-- 2.3- Radio_de -->
-<addon id="plugin.audio.radio_de" name="Radio" provider-name="Tristan Fischer, enen92" version="3.0.5+matrix.0">
+<addon id="plugin.audio.radio_de" name="Radio" provider-name="Tristan Fischer, enen92" version="3.0.6+matrix.1">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.xbmcswift2" version="19.0.4" />
@@ -109,10 +109,8 @@
         <source>https://github.com/XBMC-Addons/plugin.audio.radio_de</source>
         <forum>https://forum.kodi.tv/showthread.php?tid=119362</forum>
         <license>GPL-2.0-only</license>
-        <news>v3.0.5+matrix.0 (8/12/2020)
-            [new] Add support to offscreen=True in Listitems
-            [cosmetics] License headers
-            [cleanup] Cleanup unused init files
+        <news>v3.0.6+matrix.1 (4/5/2021)
+            [new] Also set the station name property on the final resolved item
         </news>
         <summary lang="be_BY">Access &gt;30000 radio broadcasts</summary>
         <summary lang="ca_ES">accedeix a mes de 30000 emissores de radio</summary>
@@ -454,7 +452,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 <!-- 4.8- Shadow -->
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="2.6.8"                                                                                                                                        
+	   version="2.7.0"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
 	
@@ -475,6 +473,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
   
 </addon>
+
 
 <!-- 4.9- SMR Link Tester -->
 <addon id="plugin.video.smr_link_tester" version="1.1.4" name="SMR Link Tester" provider-name="gujal">
@@ -891,7 +890,7 @@ Add-on originally by doko.
 </addon>
 
 <!-- 6.5- Diamond Build Repo (Server 1 USA) For Kodi 19 -->
-<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build Repo (Server 1 USA) For Kodi 19[/COLOR][COLORwhite]*[/COLOR]" version="10.31" provider-name="Diamond Build">
+<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build K19 Repo (Primary Server USA)[/COLOR][COLORwhite]*[/COLOR]" version="10.60" provider-name="Diamond Build">
 	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
 	<dir>
 		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
@@ -906,7 +905,7 @@ Add-on originally by doko.
 	</extension>
 	<extension point="xbmc.addon.metadata">
 <summary lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</summary>
-<description lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</description>
+<description lang="en">Educational use only, Diamond Build Repository For Kodi 19 - Server 1 USA</description>
 <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
 <platform>all</platform>
 	</extension>
@@ -1028,14 +1027,14 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- 6.12- Octopus Repository -->
-<addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.71" provider-name="Twiglet">
+<addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.84" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="[COLOR aqua]Octopus Repository[/COLOR]">
-            <info compressed="false">http://octopus246.esy.es/_octopus/addons.xml</info>
-            <checksum>http://octopus246.esy.es/_octopus/addons.xml.md5</checksum>
-            <datadir zip="true">http://octopus246.esy.es/_octopus/</datadir>
+            <info compressed="false">https://fuse99.com/_octopus/addons.xml</info>
+            <checksum>https://fuse99.com/_octopus/addons.xml.md5</checksum>
+            <datadir zip="true">https://fuse99.com/_octopus/</datadir>
             <hashes>false</hashes>
 			<dir>
                 <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
@@ -1069,13 +1068,6 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
             <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
         </dir>
-		
-         <dir>
-             <info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
-             <checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
-             <datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
-			 <hashes>false</hashes>
-         </dir>
 		<dir>
            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
@@ -1088,6 +1080,10 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
             <description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
             <platform>all</platform>
             <genre>movies,usa</genre>
+			<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>    
+            </assets>
         </extension>
     </addon>
 
@@ -1479,7 +1475,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <!-- 7.10- SubsKeys -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
-       version="1.0.1"
+       version="1.0.4"
        provider-name="Subs">
   <requires>
 	<import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -1498,7 +1494,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <!-- 8- Services Subtitles -->
 
 <!-- 8.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.7" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.3.4" provider-name="Sbs">
   <requires>
 	<import addon="script.module.requests" version="2.9.1" />
 	<import addon="script.common.plugin.cache" version="2.5.5"/>
