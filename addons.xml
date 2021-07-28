@@ -913,6 +913,26 @@ Add-on originally by doko.
 </addon>
 
 <!-- 6.5- Diamond Build Repo (Server 1 USA) For Kodi 19 -->
+<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build K19 Repo (Primary Server USA)[/COLOR][COLORwhite]*[/COLOR]" version="10.60" provider-name="Diamond Build">
+	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
+	<dir>
+		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
+		<checksum>https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+<summary lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</summary>
+<description lang="en">Educational use only, Diamond Build Repository For Kodi 19 - Server 1 USA</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<platform>all</platform>
+	</extension>
+</addon>
 
 <!-- 6.6- Diggz Matrix Repository -->
 <addon id="repository.diggzmatrix" name="Diggz Matrix Repository" version="1.0" provider-name="Diggz">
@@ -1030,6 +1050,65 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- 6.12- Octopus Repository -->
+<addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.84" provider-name="Twiglet">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR aqua]Octopus Repository[/COLOR]">
+            <info compressed="false">https://fuse99.com/_octopus/addons.xml</info>
+            <checksum>https://fuse99.com/_octopus/addons.xml.md5</checksum>
+            <datadir zip="true">https://fuse99.com/_octopus/</datadir>
+            <hashes>false</hashes>
+			<dir>
+                <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+                <hashes>false</hashes>
+           </dir>
+		   
+           <dir>
+               <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+               <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+               <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+			   <hashes>false</hashes>
+          </dir>
+		  
+          <dir>
+              <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+              <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+              <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+			  <hashes>false</hashes>
+         </dir>
+		 
+		 <dir>
+             <info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml</info>
+             <checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml.md5</checksum>
+             <datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/</datadir>
+        </dir>
+		
+		 <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
+		<dir>
+           <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+           <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+           <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		   <hashes>false</hashes>
+        </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Please do NOT post this Repository on Youtube, Facebook, Blogs or anywhere on the internet, thank you.</summary>
+            <description>This repository nor the addons within does not form part of the Kodi Media Centre. Please do not seek assistance with this repository or the addons from any of the Official Kodi Support Channels.The authors do not host any of the content in these addons and takes no responsibility for content found</description>
+            <platform>all</platform>
+            <genre>movies,usa</genre>
+			<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>    
+            </assets>
+        </extension>
+    </addon>
 
 <!-- 6.13- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
