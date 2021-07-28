@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.optimus"
 	   name="Optimus"
-	   version="1.0.5"
-	   provider-name="Darkness">
+	   version="1.0.7"
+	   provider-name="Darknesss">
   <requires>
   </requires>
   <extension point="xbmc.python.pluginsource"
