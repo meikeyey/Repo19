@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <addons>
-
-<!-- 1- Repositories A -->
-
-<!-- 1.1- Elementum Unofficial Repository -->
-<addon id="Elementum.Unofficial.Repository" name="Elementum Unofficial Repository" version="1.0.2" provider-name="Elementum Unofficial">
+    
+<!-- 5.3- Poodle 19 Add-ons Repository -->
+<addon id="repository.Kpoodle19" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
-    <extension point="xbmc.addon.repository" name="Elementum Unofficial Repository">
+    <extension point="xbmc.addon.repository" name="Poodle 19 Add-ons Repository">
         <dir>
-            <info compressed="false">https://rock.seedhost.eu/kcat123/Repo/zips3/addons.xml</info>
-            <checksum>https://rock.seedhost.eu/kcat123/Repo/zips3/addons.xml.md5</checksum>
-            <datadir zip="true">https://rock.seedhost.eu/kcat123/Repo/zips3/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/Kpoodle/Repo19/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Kpoodle/Repo19/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Kpoodle/Repo19/master/zips</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -23,27 +21,9 @@
         <platform>all</platform>
         <assets>
             <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
+            <fanart>fanart.png</fanart>
         </assets>
         <news></news>
-    </extension>
-</addon>
-
-<!-- 1.2-Lanik (Python 3) Repository -->
-<addon id="lanik_p3.repo" name="Lanik (Python 3) Repository" provider-name="Dalibor Lanik" version="1.0.0">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0" />
-        </requires>
-        <extension name="Lanik (Python 3) Repository" point="xbmc.addon.repository">
-            <info compressed="false">http://kodi.lanik.org/_p3repo/addons.xml</info>
-            <checksum>http://kodi.lanik.org/_p3repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://kodi.lanik.org/_p3repo/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Repository for my KODI plugins</summary>
-            <description>KODI Repository for stuff made by D. Lanik</description>
-            <platform>all</platform>
     </extension>
 </addon>
 
