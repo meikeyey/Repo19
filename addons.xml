@@ -1370,10 +1370,39 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 </addon>
 
 <!-- 7.10- SubsKeys -->
+<addon id="script.subskeys"
+       name="מקשים לכתוביות"
+       version="1.0.4"
+       provider-name="Subs">
+  <requires>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+  </requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard map for subtitles</summary>
+    <language>en</language>
+    <description lang="en">Keyboard map for subtitles</description>
+     <platform>all</platform>
+  </extension>
+</addon>
 
 <!-- 8- Services Subtitles -->
 
 <!-- 8.1- All Subs Flash -->
+<addon id="service.subtitles.wizdom" name="Wizdom Subs" version="3.0.1" provider-name="Wizdom">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Wizdom Subs</summary>
+    <description lang="en">Wizdom Subs. Be smart use subs!  &#xA;Visit us at http://wizdom.xyz</description>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
 
 <!-- 8.2- Wizdom Subs -->
 <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="3.0.1" provider-name="Wizdom">
