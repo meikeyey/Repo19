@@ -1415,7 +1415,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 <!-- 8- Services Subtitles -->
 
 <!-- 8.1- All Subs Flash -->
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.3.4" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.3.5" provider-name="Sbs">
   <requires>
 	<import addon="script.module.requests" version="2.9.1" />
 	<import addon="script.common.plugin.cache" version="2.5.5"/>
