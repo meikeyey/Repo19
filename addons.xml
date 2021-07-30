@@ -545,7 +545,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.11- Telemedia 2.0 -->
+<!-- 4.11- Telemedia 2.0 --->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="2.0.0"
