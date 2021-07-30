@@ -300,9 +300,34 @@
   </extension>
 </addon>
 
-<!-- 4- plugin.video -->
+<!-- 4- plugin.video A -->
 
-<!-- 4.1- Blink -->
+<!-- 4.1- Cloud 9 -->
+<addon id="plugin.video.Cloud9"
+	   name="[COLORgold]Cloud 9[/COLOR]"
+	   version="1.1.1"
+	   provider-name="Trigger">
+    <requires>
+	    <import addon="script.module.resolveurl" />
+    </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Third Party Addon</summary>
+    <description lang="en">We Don't Host Any Of The Streams - They Are All Available On The Internet - Compatible With Matrix</description>
+    <platform>all</platform>
+	<assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<!-- 5- plugin.video B -->
+
+<!-- 5.1- Blink -->
 <addon id="plugin.video.blink"
 	   name="Blink"
 	   version="1.1.2"
@@ -326,7 +351,7 @@ Everything You Want.</summary>
   </extension>
 </addon>
 
-<!-- 4.2- FDJ.HD -->
+<!-- 5.2- FDJ.HD -->
 <addon id="plugin.video.fdj.hd.matrix" name="[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR]" version="1.0a-matrix" provider-name="frenchdj"> 
 <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -356,7 +381,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 </extension>
 </addon>
 
-<!-- 4.3- Kids New הכל לילדים -->
+<!-- 5.3- Kids New הכל לילדים -->
 <addon id="plugin.video.kids_new"
 	   name="הכל לילדים"
 	   version="1.5.4"
@@ -381,7 +406,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.4- Mando S -->
+<!-- 5.4- Mando S -->
 <addon id="plugin.video.mando"
 	   name="Mando S"
 	   version="4.4.0"
@@ -403,7 +428,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.5- Optimus -->
+<!-- 5.5- Optimus -->
 <addon id="plugin.video.optimus"
 	   name="Optimus"
 	   version="1.0.7"
@@ -425,7 +450,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.6- Playlist Loader -->
+<!-- 5.6- Playlist Loader -->
 <addon id="plugin.video.playlistloader" name="Playlist Loader" version="1.0.3+matrix" provider-name="Forked by Publish3r">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -447,7 +472,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.7- Sdarot.Tv V2 -->
+<!-- 5.7- Sdarot.Tv V2 -->
 <addon id="plugin.video.sdarot.tv" name="Sdarot.Tv V2" version="7.0.2" provider-name="KodiMaster">
     <requires>
         <import addon="script.module.requests" version="2.9.1"/>
@@ -473,7 +498,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
     </extension>
 </addon>
 
-<!-- 4.8- Shadow -->
+<!-- 5.8- Shadow -->
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
 	   version="2.7.0"                                                                                                                                        
@@ -498,7 +523,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   
 </addon>
 
-<!-- 4.9- SMR Link Tester -->
+<!-- 5.9- SMR Link Tester -->
 <addon id="plugin.video.smr_link_tester" version="1.1.4" name="SMR Link Tester" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0"/> -->
@@ -520,7 +545,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<!-- 4.10- SportHD -->
+<!-- 5.10- SportHD -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.1.8" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
@@ -545,7 +570,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.11- Telemedia 2.0 --->
+<!-- 5.11- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="2.0.0"
@@ -571,7 +596,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 4.12- WatchNixtoons2 -->
+<!-- 5.12- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -644,9 +669,9 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 5- Repositories B -->
+<!-- 6- Repositories B -->
 
-<!-- 5.1- <!-- 3.1- DejaVu Repo -->
+<!-- 6.1- <!-- 3.1- DejaVu Repo -->
 <addon id="repository.DejaVu" name="[COLOR gold]DejaVu Repo[/COLOR]" version="1.0.5" provider-name="The Wombles">
 <extension point="xbmc.addon.repository" name="[COLOR gold]DejaVu Repo[/COLOR]">
 	<dir>
@@ -691,7 +716,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 5.2- Fishenzon repo -->
+<!-- 6.2- Fishenzon repo -->
   <addon id="repository.Fishenzon" name="Fishenzon repo" version="1.0.1" provider-name="Fishenzon">
 	<extension point="xbmc.addon.repository" name="Fishenzon repo">
 		<info compressed="false">https://raw.githubusercontent.com/fishenzon/repo/master/addons.xml</info>
@@ -708,7 +733,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 5.3- Poodle 19 Add-ons Repository -->
+<!-- 6.3- Poodle 19 Add-ons Repository -->
 <addon id="repository.Kpoodle19" name="Poodle 19 Add-ons Repository" version="1.0.0" provider-name="Poodle">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
@@ -733,7 +758,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 5.4- Narcacist's Wizard Repository -->
+<!-- 6.4- Narcacist's Wizard Repository -->
 <addon id="repository.NarcacistWizard" name="Narcacist's Wizard Repository" version="1.1.3" provider-name="Narcacist">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -781,7 +806,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 5.5- Rocks-crusher Repository -->
+<!-- 6.5- Rocks-crusher Repository -->
 <addon id="repository.Rockcrusher" name="[COLOR red]Rocks Repository[/COLOR]" version="2.8" provider-name="Rock">
 	<extension point="xbmc.addon.repository" name="[COLOR red]Rocks Repository[/COLOR]">
 	<dir minversion="18.0" maxversion="18.9.0">
@@ -813,7 +838,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 5.6- Stream Army Repo 18/19 Compatible Addons -->
+<!-- 6.6- Stream Army Repo 18/19 Compatible Addons -->
 <addon id="repository.StreamArmy" name="[COLOR crimson]S[COLOR silver]tream Army Repo 18 / 19 Compatible Addons[/COLOR]" version="13.0.005" provider-name="@Nemzzy668 / @_Manc_">
 	<extension point="xbmc.addon.repository" name="Stream Army">
 		<dir>
@@ -840,9 +865,9 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 6- Repositories C -->
+<!-- 7- Repositories C -->
 
-<!-- 6.1- arxtic-ape repository -->
+<!-- 7.1- arxtic-ape repository -->
 <addon id="repository.arxtic-ape" name="arxtic-ape repository" version="1.0.0" provider-name="arxtic-ape">
 	<extension point="xbmc.addon.repository" name="Arxtic Ape Addon Repository">
 		<dir>
@@ -863,7 +888,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 6.2- AutoWidget repository -->
+<!-- 7.2- AutoWidget repository -->
 <addon id="repository.autowidget" name="AutoWidget Repository" version="1.0" provider-name="drinfernoo">
     <extension point="xbmc.addon.repository" name="AutoWidget Repository">
         <dir>
@@ -882,7 +907,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 6.3- Bugatsinho repository -->
+<!-- 7.3- Bugatsinho repository -->
 <addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
     <extension point="xbmc.addon.repository" name="Bugatsinho repository">
         <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
@@ -923,7 +948,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 6.4- CastagnaIT Repository for Kodi 19.x (MATRIX) -->
+<!-- 7.4- CastagnaIT Repository for Kodi 19.x (MATRIX) -->
 <addon id="repository.castagnait" name="CastagnaIT Repository for Kodi 19.x (MATRIX)" version="1.0.0" provider-name="castagnait">
 	<extension point="xbmc.addon.repository" name="CastagnaIT Repository">
 		<dir>
@@ -942,7 +967,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 6.5- Diamond Build Repo (Server 1 USA) For Kodi 19 -->
+<!-- 7.5- Diamond Build Repo (Server 1 USA) For Kodi 19 -->
 <addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build K19 Repo (Primary Server USA)[/COLOR][COLORwhite]*[/COLOR]" version="10.62" provider-name="Diamond Build">
 	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
 	<dir>
@@ -973,7 +998,7 @@ Add-on originally by doko.
 	</extension>
 </addon>
 
-<!-- 6.6- Diggz Matrix Repository -->
+<!-- 7.6- Diggz Matrix Repository -->
 <addon id="repository.diggzmatrix" name="Diggz Matrix Repository" version="1.0" provider-name="Diggz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -991,7 +1016,7 @@ Add-on originally by doko.
     </extension>
 </addon>
 
-<!-- 6.7- Dobbelina Repository -->
+<!-- 7.7- Dobbelina Repository -->
 <addon id="repository.dobbelina" name="[COLOR pink]Dobbelina Repository[/COLOR]" version="1.0.3" provider-name="dobbelina">
     <extension point="xbmc.addon.repository" name="[COLOR pink]Dobbelina Repository[/COLOR]">
     <dir>
@@ -1017,7 +1042,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 6.8- frenchdj Repository -->
+<!-- 7.8- frenchdj Repository -->
 <addon id="repository.frenchdj" name="frenchdj repository" version="0.0.2" provider-name="frenchdj">
 	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
 		<info compressed="false">https://raw.githubusercontent.com/frenchdj/repository.frenchdj/master/_repo/addons.xml</info>
@@ -1032,7 +1057,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 6.9- Host505 Repository -->
+<!-- 7.9- Host505 Repository -->
 <addon id="repository.host505" name="host505 repo" version="2.5" provider-name="host505">
     <extension point="xbmc.addon.repository" name="host505 repo">
     <dir>
@@ -1053,7 +1078,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 6.10- jmooremcc Addons Repo -->
+<!-- 7.10- jmooremcc Addons Repo -->
 <addon id="repository.jmooremcc" name="jmooremcc Addons" version="1.0.0" provider-name="jmooremcc">
 	<extension point="xbmc.addon.repository" name="jmooremcc Addons">
 		<info compressed="false">https://raw.github.com/jmooremcc/Repository.jmooremcc/master/addons.xml</info>
@@ -1067,7 +1092,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 6.11- Nixgates Repo -->
+<!-- 7.11- Nixgates Repo -->
 <addon id="repository.nixgates" name="Nixgates Repo" version="2.1.0" provider-name="Nixgates">
 	<extension point="xbmc.addon.repository" name="Nixgates Repo">
 		<dir minversion="18.0">
@@ -1087,7 +1112,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 6.12- Octopus Repository -->
+<!-- 7.12- Octopus Repository -->
 <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.86" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -1148,7 +1173,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 6.13- ResolveURL Repository -->
+<!-- 7.13- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -1171,7 +1196,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 6.14- SlyGuy Repository -->
+<!-- 7.14- SlyGuy Repository -->
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.2">
   <extension point="xbmc.addon.repository" name="SlyGuy Repository">
     <dir>
@@ -1194,7 +1219,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 6.15- The Crew Repository -->
+<!-- 7.15- The Crew Repository -->
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.4">
 	<extension point="xbmc.addon.repository" name="The Crew" >
 			<dir minversion="16.0.0" maxversion="18.9.9">
@@ -1249,7 +1274,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 6.16- Tikipeter's Repository -->
+<!-- 7.16- Tikipeter's Repository -->
 <addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
     <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
         <dir>
@@ -1275,7 +1300,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 6.17- Universal Scrapers Repository -->
+<!-- 7.17- Universal Scrapers Repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -1293,7 +1318,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 6.18- Wrestling Repository -->
+<!-- 7.18- Wrestling Repository -->
 <addon id="repository.wod" name="Wrestling Repository" version="1.8" provider-name="WOD">
 	<extension point="xbmc.addon.repository" name="Wrestling Repository">
 		<dir>
@@ -1309,9 +1334,9 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 7- Script -->
+<!-- 8- Script -->
 
-<!-- 7.1- Elementum Burst -->
+<!-- 8.1- Elementum Burst -->
 <addon id="script.elementum.burst" name="Elementum [COLOR FFFF6B00]Burst[/COLOR]" version="0.0.70" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
@@ -1350,7 +1375,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 7.2- EZ Maintenance+ -->
+<!-- 8.2- EZ Maintenance+ -->
 <addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2020.12.19.1" provider-name="aenema, peno">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
@@ -1374,7 +1399,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.3- KCleaner -->
+<!-- 8.3- KCleaner -->
 <addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02"> 
   <requires>
     <import addon="xbmc.python" version="3.0.0" /> 
@@ -1408,7 +1433,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.4- requests (Dependency for Kids New הכל לילדים) -->
+<!-- 8.4- requests (Dependency for Kids New הכל לילדים) -->
 <addon id="script.module.requests"
        name="requests"
        version="2.22.0+matrix.1"
@@ -1438,7 +1463,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.5- ResolveURL.xxx (Dependency for SMR Link Tester) -->
+<!-- 8.5- ResolveURL.xxx (Dependency for SMR Link Tester) -->
 <addon id="script.module.resolveurl.xxx" version="2.1.12" name="Adult Resolver SMR Extension" provider-name="gujal">
 	<requires>
 		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
@@ -1452,7 +1477,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 7.6- ResolveURL (Dependency for Kids New הכל לילדים) -->
+<!-- 8.6- ResolveURL (Dependency for Kids New הכל לילדים) -->
 <addon id="script.module.resolveurl" name="ResolveURL" version="5.1.25" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -1482,7 +1507,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 7.7- t0mm0's common stuff (Dependency for MP3 Streams) -->
+<!-- 8.7- t0mm0's common stuff (Dependency for MP3 Streams) -->
 <addon id="script.module.t0mm0.common" name="t0mm0's common stuff" version="3.0.1" provider-name="t0mm0">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -1496,7 +1521,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.8- XbmcSwift2 (Dependency for Radio_de) -->
+<!-- 8.8- XbmcSwift2 (Dependency for Radio_de) -->
 <addon id="script.module.xbmcswift2" name="xbmcswift2" provider-name="Jonathan Beluch (jbel), enen92" version="19.0.5">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -1515,7 +1540,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.9- Skin Switcher -->
+<!-- 8.9- Skin Switcher -->
 <addon id="script.skinswitcher19"
 	     name="Skin Switcher"
 	     version="1.0.0"
@@ -1537,7 +1562,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.10- SubsKeys -->
+<!-- 8.10- SubsKeys -->
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
        version="1.0.4"
@@ -1556,9 +1581,9 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 8- Services Subtitles -->
+<!-- 9- Services Subtitles -->
 
-<!-- 8.1- All Subs Flash -->
+<!-- 9.1- All Subs Flash -->
 <addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.3.5" provider-name="Sbs">
   <requires>
 	<import addon="script.module.requests" version="2.9.1" />
@@ -1576,7 +1601,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 8.2- Wizdom Subs -->
+<!-- 9.2- Wizdom Subs -->
 <addon id="service.subtitles.wizdom" name="Wizdom Subs" version="3.0.1" provider-name="Wizdom">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
@@ -1590,7 +1615,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 8.3- Up Next -->
+<!-- 9.3- Up Next -->
 <addon id="service.upnext" name="Up Next" version="1.1.5+matrix.1" provider-name="im85288">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
