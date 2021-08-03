@@ -472,33 +472,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 5.7- Sdarot.Tv V2 -->
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv V2" version="7.0.2" provider-name="KodiMaster">
-    <requires>
-        <import addon="script.module.requests" version="2.9.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <minversion>31632</minversion>
-        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
-        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
-        <description lang="en">Sdarot is a site that deals with direct viewing of various series from Israel and abroad. All series are on site contain subtitles, Israeli series also has translation sometimes. sdarot lets watch thousands of different series and tens of thousands of different episodes free! The site sdarot Updated on a daily base and allows direct viewing of innovative technologies while ensuring maximum quality without compromise.</description>
-        <description lang="he">סדרות הינו אתר העוסק בצפייה ישירה של סדרות שונות מהארץ ומחו"ל. כל הסדרות מח"ול הנמצאות באתר סדרות מכילות תרגום לעברית, גם בסדרות הישראליות יש תרגום לעתים. אתר סדרות מאפשר צפייה ישירה חינם לאלפי סדרות שונות ועשרות אלפי פרקים שונים בחינם! אתר סדרות מתעדכן על בסיס יומי ומאפשר צפייה ישירה בטכנולוגיות חדשניות תוך הקפדה על איכות מקסימלית ללא פשרות.</description>
-        <news></news>
-        <supportedcontent>
-        <content>tvshows</content>
-        </supportedcontent>
-		<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-    </assets>
-    </extension>
-</addon>
-
-<!-- 5.8- Shadow -->
+<!-- 5.7- Shadow -->
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
 	   version="2.7.0"                                                                                                                                        
@@ -523,7 +497,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   
 </addon>
 
-<!-- 5.9- SMR Link Tester -->
+<!-- 5.8- SMR Link Tester -->
 <addon id="plugin.video.smr_link_tester" version="1.1.4" name="SMR Link Tester" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0"/> -->
@@ -545,7 +519,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
 	</extension>
 </addon>
 
-<!-- 5.10- SportHD -->
+<!-- 5.9- SportHD -->
 <addon id="plugin.video.sporthdme" name="SportHD" version="0.1.8" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
@@ -570,7 +544,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 5.11- Telemedia 2.0 -->
+<!-- 5.10- Telemedia 2.0 -->
 <addon id="plugin.video.telemedia"
 	   name="Telemedia 2.0"
 	   version="2.0.0"
@@ -596,7 +570,7 @@ Channels and Playlists organized by categories. Source: Youtube Website.
   </extension>
 </addon>
 
-<!-- 5.12- WatchNixtoons2 -->
+<!-- 5.11- WatchNixtoons2 -->
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.5.1" provider-name="doko">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -1399,41 +1373,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 8.3- KCleaner -->
-<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02"> 
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" /> 
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource">
-        <provides>executable</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="startup"> 
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata"> 
-    <platform>all</platform>
-    <website>http://projects.lanik.org/KodiProject_KCleaner.htm</website>
-    <summary lang="en_GB">Clean up temporary files in Kodi.</summary>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
-    <email>dalibor@lanik.org</email>
-    <description lang="en_GB">Clean up temporary files in Kodi.</description>
-    <news>v4.0 [CR]
-- Python 3 version [CR]
-</news>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshot-01.jpg</screenshot>
-        <screenshot>resources/screenshot-02.jpg</screenshot>
-        <screenshot>resources/screenshot-03.jpg</screenshot>
-        <banner>resources/banner.jpg</banner>
-        <logo>resources/logo.png</logo>
-    </assets>
-  </extension>
-</addon>
-
-<!-- 8.4- Mutagen (Dependency for MP3 Streams) -->
+<!-- 8.3- Mutagen (Dependency for MP3 Streams) -->
 <addon id="script.module.mutagen" name="Mutagen" version="1.44.0+matrix.1" provider-name="Christoph Reiter">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
