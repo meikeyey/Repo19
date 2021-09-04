@@ -95,10 +95,10 @@
 </addon>
 
 <!-- 2.2- MP3 Streams -->
-<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2021.0.6" provider-name="Slam, Diggz">
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2021.0.4" provider-name="Slam, Diggz">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.future"/>
+        <import addon="script.module.t0mm0.common" version="3.0.0"/>
         <import addon="script.module.mutagen"/>
         <import addon="script.module.requests"/>
     </requires>
@@ -110,7 +110,7 @@
         <platform>all</platform>
         <summary>A music streaming Collection.</summary>
         <description>Diggz MP3 Streams Kodi 19 conversion by Slam</description>
-        <news>2021.0.6 - Fixed issue with hanging  when skipping tracks. 2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
+        <news>2021.0.4 - Fixed Settings, 2021.0.3 - Bugfixes. Enjoy!</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -387,7 +387,7 @@ Everything You Want.</summary>
 </addon>
 
 <!-- 5.7- SMR Link Tester -->
-<addon id="plugin.video.smr_link_tester" version="1.1.5" name="SMR Link Tester" provider-name="gujal">
+<addon id="plugin.video.smr_link_tester" version="1.1.4" name="SMR Link Tester" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0"/> -->
         <import addon="script.module.resolveurl"/>
@@ -409,7 +409,7 @@ Everything You Want.</summary>
 </addon>
 
 <!-- 5.8- SportHD -->
-<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.10" provider-name="Bugatsinho">
+<addon id="plugin.video.sporthdme" name="SportHD" version="0.1.8" provider-name="Bugatsinho">
   <requires>
     <!--import addon="xbmc.python" version="2.1.0"/-->
     <import addon="script.module.dateutil" />
@@ -758,7 +758,7 @@ Everything You Want.</summary>
 </addon>
 
 <!-- 7.5- Diamond Build Repo (Server 1 USA) For Kodi 19 -->
-<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build K19 Repo (Primary Server USA)[/COLOR][COLORwhite]*[/COLOR]" version="10.63" provider-name="Diamond Build">
+<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build K19 Repo (Primary Server USA)[/COLOR][COLORwhite]*[/COLOR]" version="10.62" provider-name="Diamond Build">
 	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
 	<dir>
 		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
@@ -774,11 +774,6 @@ Everything You Want.</summary>
 		<info compressed="false">https://k.slyguy.xyz/.repo/addons.xml</info>
 		<checksum>https://k.slyguy.xyz/.repo/addons.xml.md5</checksum>
 		<datadir zip="true">https://k.slyguy.xyz/.repo/</datadir>
-	</dir>
-	<dir>
-		<info compressed="false">https://github.com/mhancoc7/kodi-addons/raw/master/_repo/addons.xml</info>
-		<checksum>https://github.com/mhancoc7/kodi-addons/raw/master/_repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/mhancoc7/kodi-addons/raw/master/_repo/</datadir>	
 	</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -887,37 +882,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 7.11- jurialmunkey Alpha Repository -->
-<addon id="repository.jurialmunkey" name="jurialmunkey Alpha Repository" version="2.2" provider-name="jurialmunkey">
-    <extension point="xbmc.addon.repository" name="jurialmunkey Alpha Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/</datadir>
-        </dir>
-		<dir minversion="18.0" maxversion="18.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/leia/zips/</datadir>
-        </dir>
-        <dir minversion="18.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/matrix/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>jurialmunkey Alpha Repository</summary>
-        <description>A repository for alpha releases of jurialmunkey's skins.</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-    </extension>
-</addon>
-
-<!-- 7.12- Nixgates Repo -->
+<!-- 7.11- Nixgates Repo -->
 <addon id="repository.nixgates" name="Nixgates Repo" version="2.1.0" provider-name="Nixgates">
 	<extension point="xbmc.addon.repository" name="Nixgates Repo">
 		<dir minversion="18.0">
@@ -937,7 +902,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 7.13- Octopus Repository -->
+<!-- 7.12- Octopus Repository -->
 <addon id="repository.octopus" name="[COLOR aqua]Octopus Repository[/COLOR]" version="0.1.86" provider-name="Twiglet">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -998,7 +963,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 7.14- ResolveURL Repository -->
+<!-- 7.13- ResolveURL Repository -->
 <addon id="repository.resolveurl" name="ResolveURL Repository" provider-name="gujal" version="1.0.0">
   <extension point="xbmc.addon.repository" name="ResolveURL Repository">
     <dir>
@@ -1021,7 +986,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.15- SlyGuy Repository -->
+<!-- 7.14- SlyGuy Repository -->
 <addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.2">
   <extension point="xbmc.addon.repository" name="SlyGuy Repository">
     <dir>
@@ -1044,7 +1009,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<!-- 7.16- The Crew Repository -->
+<!-- 7.15- The Crew Repository -->
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.4">
 	<extension point="xbmc.addon.repository" name="The Crew" >
 			<dir minversion="16.0.0" maxversion="18.9.9">
@@ -1099,7 +1064,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
 	</extension>
 </addon>
 
-<!-- 7.17- Tikipeter's Repository -->
+<!-- 7.16- Tikipeter's Repository -->
 <addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
     <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
         <dir>
@@ -1125,7 +1090,7 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<!-- 7.18- Universal Scrapers Repository -->
+<!-- 7.17- Universal Scrapers Repository -->
 <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -1143,19 +1108,14 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
         </extension>
     </addon>
 
-<!-- 7.19- Wrestling Repository -->
-<addon id="repository.wod" name="Wrestling Repository" version="1.9" provider-name="WOD">
+<!-- 7.18- Wrestling Repository -->
+<addon id="repository.wod" name="Wrestling Repository" version="1.8" provider-name="WOD">
 	<extension point="xbmc.addon.repository" name="Wrestling Repository">
 		<dir>
-			<info compressed="false">https://thundercat.cf/repos/wodrepo/addons.xml</info>
-			<checksum>https://thundercat.cf/repos/wodrepo/addons.xml.md5</checksum>
-			<datadir zip="true">https://thundercat.cf/repos/wodrepo/</datadir>
+			<info compressed="false">http://thundercat.cf/repos/wodrepo/addons.xml</info>
+			<checksum>http://thundercat.cf/repos/wodrepo/addons.xml.md5</checksum>
+			<datadir zip="true">http://thundercat.cf/repos/wodrepo/</datadir>
 		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-		</dir>		
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en"></summary>
