@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.wod" name="Wrestling Repository" version="1.8" provider-name="WOD">
+<addon id="repository.wod" name="Wrestling Repository" version="1.9" provider-name="WOD">
 	<extension point="xbmc.addon.repository" name="Wrestling Repository">
 		<dir>
-			<info compressed="false">http://thundercat.cf/repos/wodrepo/addons.xml</info>
-			<checksum>http://thundercat.cf/repos/wodrepo/addons.xml.md5</checksum>
-			<datadir zip="true">http://thundercat.cf/repos/wodrepo/</datadir>
+			<info compressed="false">https://thundercat.cf/repos/wodrepo/addons.xml</info>
+			<checksum>https://thundercat.cf/repos/wodrepo/addons.xml.md5</checksum>
+			<datadir zip="true">https://thundercat.cf/repos/wodrepo/</datadir>
 		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>		
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en"></summary>
