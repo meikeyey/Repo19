@@ -339,7 +339,6 @@ Everything You Want.</summary>
 
 <!-- 5.3- Mando S -->
 <addon id="plugin.video.mando"
-<addon id="plugin.video.mando"
 	   name="Mando S"
 	   version="4.7.4"
 	   provider-name="Darknesss">
